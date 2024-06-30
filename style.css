@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.header-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: #ae00ff;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #1f1f1f;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+#food-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.food-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2b2b2b;
+    transition: background-color 0.3s ease;
+}
+
+.food-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.food-info {
+    flex-grow: 1;
+}
+
+.food-info h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #2600ff;
+}
+
+.food-info p {
+    margin: 5px 0;
+    color: #aaaaaa;
+}
+
+.counter-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.counter-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ae00ff;
+    color: #121212;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.counter-btn:hover {
+    background-color: #008fbf;
+}
+
+.instructions {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #00bfff;
+    color: #121212;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #10bf00;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .food-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .food-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
